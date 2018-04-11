@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+<servlet>  
+<servlet-name>PostParameterServlet</servlet-name>  
+<servlet-class>PostParameterServlet</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>PostParameterServlet</servlet-name>  
+<url-pattern>/PostParameterServlet</url-pattern>  
+</servlet-mapping>  
+
+<servlet>  
+<servlet-name>Demo</servlet-name>  
+<servlet-class>ServletDatabase</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Demo</servlet-name>  
+<url-pattern>/ServletDatabase</url-pattern>  
+</servlet-mapping>  
+  
+</web-app>  
