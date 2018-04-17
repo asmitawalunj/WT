@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+<style >
+		html,body
+		{
+			background-image: url('final.jpg');
+		}
+	</style>
+</style>
+	<title>JAVASCRIPT</title>
+	<script type="text/javascript">
+		function validate() {
+
+			var ph=document.forms["myform"]["ph"].value;
+			var phlen=ph.length;
+			if(ph.match("[a-zA-Z]+"))
+			{
+				alert("Enter number !!!");
+				return false;
+			}
+			else if(phlen<10)
+			{
+				alert("Enter 10 digit phone number");
+				return false;
+			}
+
+			var pass=document.forms["myform"]["pass"].value;
+			var conf=document.forms["myform"]["confirm"].value;
+
+			if(pass == "")
+			{
+				alert("Empty string");
+				return false;
+			}
+			if(pass != conf)
+			{
+				alert("Incorrect password");
+				return false;
+			}
+
+
+
+
+
+		}
+
+
+	</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validate()" action="jssuccess.html">
+	Username:<input type="text" name="username"><br>
+	Phone number:<input type="text" name="ph"><br>
+	password:<input type="password" name="pass"><br>
+	confirm password:<input type="password" name="confirm"><br>
+	<input type="submit" value="Register">
+	
+</form>
+</body>
+</html>
